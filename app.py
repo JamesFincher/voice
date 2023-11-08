@@ -3,7 +3,8 @@ from tkinter import filedialog
 from openai import OpenAI
 
 def synthesize_speech():
-    client = OpenAI()
+    # Provide your OpenAI API key here
+    client = OpenAI(api_key="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")
 
     # Get the text from the entry widget
     text_to_speak = text_entry.get()
